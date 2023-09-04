@@ -10,3 +10,5 @@ The higher the version number, usually the more complex.
 in V2, you have to go and edit all the directories and stuff. They are labbel with # --------------------------------------------------- LABEL ------------------------------------- so you can see them easier.
 
 Once you have done that (and made sure to download every lib needed), you can use it.
+
+### Also you cant delete the mp3 file without make the program make another so fix that if you want.
