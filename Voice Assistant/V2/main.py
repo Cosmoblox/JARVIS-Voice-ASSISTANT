@@ -226,7 +226,7 @@ while True:
                 elif "vs code" in text.lower() or "visual studio" in text.lower():
                     talk("Opening Visual Studio Code.")
                     os.startfile(
-                        r"C:\Users\[YOUR USERNAME]\AppData\Local\Programs\Microsoft VS Code\Code.exe" ------------------------------------------------------------ PUT YUOR USERNAME ------------------------------------------------------------
+                        r"C:\Users\[YOUR USERNAME]\AppData\Local\Programs\Microsoft VS Code\Code.exe" #  ------------------------------------------------------------ PUT YUOR USERNAME ------------------------------------------------------------
                     )
                 elif "youtube" in text.lower():
                     talk("Opening Youtube")
@@ -281,7 +281,7 @@ while True:
             
             elif "show me my screenshots" in text.lower():
                 talk("Here are your screenshots")
-                path_to_open = r"[PUT YOUR SCREENSHOTS DIRECTORY]" ------------------------------------------- PUT YOUR SCREENSHOTS DIRECTORY IN THERE ------------------------------------------------------------
+                path_to_open = r"[PUT YOUR SCREENSHOTS DIRECTORY]" #  ------------------------------------------- PUT YOUR SCREENSHOTS DIRECTORY IN THERE ------------------------------------------------------------
                 subprocess.Popen(["explorer", path_to_open])
             
             elif "stop" in text.lower():
