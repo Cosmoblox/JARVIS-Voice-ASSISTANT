@@ -150,7 +150,7 @@ def note(text):
 def take_screenshot():
     now = datetime.datetime.now()
     timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
-    save_path = os.path.join(r"C:\Users\COSMI\OneDrive\Pictures\Screenshots", f"screenshot_{timestamp}.png")
+    save_path = os.path.join(r"[YOUR SCREENSHOT DIRECTORY]", f"screenshot_{timestamp}.png") # ------------------------------------------------------- PUT YOUR SCREENSHOT DIRECTORY IN THERE ---------------------------------------
     
     screenshot = ImageGrab.grab()
     screenshot.save(save_path)
@@ -226,7 +226,7 @@ while True:
                 elif "vs code" in text.lower() or "visual studio" in text.lower():
                     talk("Opening Visual Studio Code.")
                     os.startfile(
-                        r"C:\Users\COSMI\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+                        r"C:\Users\[YOUR USERNAME]\AppData\Local\Programs\Microsoft VS Code\Code.exe" ------------------------------------------------------------ PUT YUOR USERNAME ------------------------------------------------------------
                     )
                 elif "youtube" in text.lower():
                     talk("Opening Youtube")
@@ -236,7 +236,7 @@ while True:
                     webbrowser.open("https://stackoverflow.com/")
                 elif "roblox" in text.lower():
                     talk("Opening Roblox")
-                    webbrowser.open("https://web.roblox.com/home")
+                    webbrowser.open("https://roblox.com/home")
                 else:
                     talk("Website or application not found.")
 
@@ -281,7 +281,7 @@ while True:
             
             elif "show me my screenshots" in text.lower():
                 talk("Here are your screenshots")
-                path_to_open = r"C:\Users\COSMI\OneDrive\Pictures\Screenshots"
+                path_to_open = r"[PUT YOUR SCREENSHOTS DIRECTORY]" ------------------------------------------- PUT YOUR SCREENSHOTS DIRECTORY IN THERE ------------------------------------------------------------
                 subprocess.Popen(["explorer", path_to_open])
             
             elif "stop" in text.lower():
